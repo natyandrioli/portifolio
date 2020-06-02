@@ -71,6 +71,10 @@ header {
   z-index: 1;
 }
 
+.classe-fantasma {
+  
+}
+
 .menu ul {
     display: flex;
     justify-content: space-around;
