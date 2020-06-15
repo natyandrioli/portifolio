@@ -12,7 +12,7 @@ body {
       ), url('../imagens/background.webp');
     /*background-image: url('https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-1.2.1&w=1000&q=80');*/
     background-size: cover;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Baloo 2', cursive;
     height: 100vh;
     font-size: 12px;
     overflow-x: hidden;
@@ -21,38 +21,45 @@ body {
 
 /*Breakpoint*/
 
+@media (min-width: 300px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 @media (min-width: 800px) {
   body {
     font-size: 18px;
-    font-family: 'Baloo 2', cursive;
   }
 }
 
 @media (min-width: 1000px) {
   body {
     font-size: 21px;
-    font-family: 'Baloo 2', cursive;
   }
 }
 
 @media (min-width: 1200px) {
   body {
     font-size: 24px;
-    font-family: 'Baloo 2', cursive;
   }
 }
 
 @media (min-width: 1400px) {
   body {
     font-size: 29px;
-    font-family: 'Baloo 2', cursive;
   }
 } 
 
 @media (min-width: 1600px) {
   body {
     font-size: 30px;
-    font-family: 'Baloo 2', cursive;
   }
 }
 
@@ -141,6 +148,14 @@ header {
   padding: 2.5em;
 }
 
+@media (min-width: 300px) {
+  .container {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -174,6 +189,33 @@ header {
   object-fit: cover;
   /*clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
   box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+}
+
+@media (min-width: 800px) {
+.sobre .avatar img {
+  border-radius: 50%;
+  height: 275px;
+  width: 275px;
+  object-fit: cover;
+  /*clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);*/
+  box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+}
+}
+
+@media (max-width: 400px) {
+  .sobre .avatar {
+    float: none;
+    margin-left: auto;
+    text-align: center;
+  }
+.sobre .avatar img {
+  border-radius: 50%;
+  box-shadow: 0px 1px 4px rgba(0,0,0,.2);
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  float: none;
+} 
 }
 
 .sobre p {
@@ -214,6 +256,14 @@ header {
   position: relative;
 }
 
+@media (min-width: 300px) {
+  .portifolio .grid {
+    max-width: 280px;
+    align-content: center;
+  } 
+}  
+
+
 @media (min-width: 800px) {
   .portifolio .grid {
     max-width: 800px;
@@ -251,6 +301,17 @@ header {
   object-position: top;
   transition: transform 0.5s;
   box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+}
+
+@media (min-width: 300px) {
+  .img-portfolio {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.3);
+  }
 }
 
 .img-portfolio:hover {
@@ -292,6 +353,13 @@ header {
 .contato .grid {
   display: grid;
   justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 300px) {
+  .contato .grid{
+    grid-template-columns: repeat(3, 100px);
+    gap: 1em;
 }
 
 @media (min-width: 900px) {
