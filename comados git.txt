@@ -1,7 +1,6 @@
 abrir git bash here no diretorio
  git status
- git add *
+ git add .
  git status
- git commit
- git status
+ git commit -m "mensagem"
  git push
